@@ -15,8 +15,10 @@
     <main>
         <section id="scanner">
             <h2>Scan a Product</h2>
-            <video id="camera" autoplay></video>
-            <button id="scan-button">Scan Barcode</button>
+            <input type="text" id="barcode-input" placeholder="Enter barcode manually">
+            <input type="file" id="image-upload" accept="image/*">
+            <p>Or paste an image here:</p>
+            <div id="paste-area" contenteditable="true" style="border: 1px dashed #ccc; padding: 10px; min-height: 50px;"></div>
             <canvas id="barcode-canvas" hidden></canvas>
         </section>
         
